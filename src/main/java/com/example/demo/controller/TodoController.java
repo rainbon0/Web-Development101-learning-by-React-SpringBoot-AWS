@@ -4,7 +4,6 @@ import com.example.demo.dto.ResponseDTO;
 import com.example.demo.dto.TodoDTO;
 import com.example.demo.model.TodoEntity;
 import com.example.demo.service.TodoService;
-import com.sun.tools.javac.comp.Todo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +18,7 @@ public class TodoController {
 
     @Autowired
     private TodoService service;
+
 
     @GetMapping("/test")
     public ResponseEntity<?> testTodo(){
